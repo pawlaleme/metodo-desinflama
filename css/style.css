@@ -1,68 +1,131 @@
-/* Estilo para o contêiner de carregamento */
+#loading,
+.banner {
+    justify-content: center;
+    display: flex
+}
+
+#loading,
+.banner,
+nav ul {
+    display: flex
+}
+
+body,
+html,
+nav ul {
+    margin: 0;
+    padding: 0
+}
+
+.hero h1,
+.hero p {
+    margin-bottom: 20px
+}
+
+.button-compra,
+.button-comprafinal {
+    text-transform: uppercase;
+    font-weight: 800
+}
+
+#loading,
+footer svg {
+    left: 0;
+    height: 100%
+}
+
+.button-compra,
+.button-comprafinal,
+body,
+footer p,
+html {
+    font-family: Teachers, sans-serif
+}
+
 #loading {
     position: fixed;
     width: 100%;
-    height: 100%;
     top: 0;
-    left: 0;
     background-color: #fff;
-    /* Cor de fundo durante o carregamento */
     z-index: 9999;
-    /* Certifique-se de que o carregamento está na frente de todos os outros elementos */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    align-items: center
 }
 
-/* Estilo para o ícone de carregamento */
 .loader {
     border: 16px solid transparent;
-    /* Cor do anel */
-    /* Cor da barra superior */
-    background: url('/images/desinflamaicon.png') no-repeat center center;
-
+    background: url('/images/desinflamaicon.png') center center/contain no-repeat;
     width: 120px;
     height: 120px;
-    width: 120px;
-    height: 120px;
-    background-size: contain;
-    animation: bounce 1s infinite;
+    animation: 1s infinite bounce
+}
+
+.hero,
+body,
+html {
+    background-color: #fff
+}
+
+@keyframes bounce {
+
+    0%,
+    100%,
+    20%,
+    50%,
+    80% {
+        transform: translateY(0)
     }
 
-    @keyframes bounce {
-        0%, 20%, 50%, 80%, 100% {
-            transform: translateY(0);
-        }
-        40% {
-            transform: translateY(-30px);
-        }
-        60% {
-            transform: translateY(-15px);
-        }
+    40% {
+        transform: translateY(-30px)
     }
 
-/* Estilos gerais */
-html,
-body {
-    margin: 0;
-    padding: 0;
-    font-family: "Teachers", sans-serif;
-    background-color: #ffffff;
+    60% {
+        transform: translateY(-15px)
+    }
+}
+
+body,
+html {
     overflow-x: hidden;
     touch-action: manipulation;
-    width: 100%;
+    width: 100%
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #a8dbb9
+}
+
+.titlec h2:hover {
+    opacity: .7;
+    color: #010f09;
+    cursor: pointer
+}
+
+.depoimento p:hover {
+    opacity: .7;
+    color: #648b73
+}
+
+img:hover {
+    opacity: .7
+}
+
+nav ul li a:hover {
+    opacity: .7;
+    color: #a4e4a4
 }
 
 header {
     color: #333;
     padding: 20px 0;
-    margin-top: -20px;
+    margin-top: -20px
 }
 
 .image-wrapper {
     text-align: right;
     margin-bottom: 100px;
-    z-index: 2;
+    z-index: 2
 }
 
 .image-laranja {
@@ -70,73 +133,65 @@ header {
     width: 350px;
     height: auto;
     margin-top: -110px;
-    right: 200px;
+    right: 200px
 }
 
 .banner {
     width: 100%;
     height: 390px;
-    overflow: visible;
-    display: flex;
-    justify-content: center;
+    overflow: visible
 }
 
 .banner img {
     width: 70%;
     height: auto;
-    object-fit: fill;
+    object-fit: fill
 }
 
+.depoimento-ativo,
 a {
-    display: block;
+    display: block
 }
 
 nav {
-    background-color: #1A3F13;
+    background-color: #1a3f13;
     height: 50px;
-    color: white;
+    color: #fff
 }
 
 nav ul {
     list-style: none;
-    margin: 0;
-    display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0;
-    gap: 30px;
+    gap: 30px
 }
 
 nav ul li {
     display: inline-block;
-    margin: 0 5px;
-    font-size: 2rem;
-    margin-top: 5px;
+    margin: 5px 5px 0;
+    font-size: 2rem
 }
 
 nav ul li a {
     text-decoration: none;
-    color: white;
-    font-weight: bold;
+    color: #fff;
+    font-weight: 700
 }
 
 .hero {
-    background-color: white;
     padding: 10px 0;
-    text-align: center;
+    text-align: center
 }
 
 .hero h1 {
     font-size: 3.33rem;
-    margin-bottom: 20px;
     font-weight: 800;
-    color: #1A3F13;
+    color: #1a3f13
 }
 
 .hero p {
     font-size: 2.13rem;
-    margin-bottom: 20px;
-    font-weight: 400;
+    font-weight: 400
 }
 
 .btn-inscricao {
@@ -147,23 +202,27 @@ nav ul li a {
     border-radius: 5px;
     cursor: pointer;
     font-size: 1rem;
-    text-decoration: none;
+    text-decoration: none
+}
+
+.beneficio,
+.beneficio img {
+    background-color: transparent
 }
 
 .btn-inscricao:hover {
     background-color: #ad86ce;
-    color: #333;
+    color: #333
 }
 
 .listabonus {
     justify-content: space-evenly;
     align-items: center;
-    text-align: right;
     flex-direction: column;
     align-items: center;
     padding: 10px;
     text-align: left;
-    line-height: 30px;
+    line-height: 30px
 }
 
 .listabonus img {
@@ -171,89 +230,82 @@ nav ul li a {
     text-align: center;
     margin: -5px 10px;
     justify-content: space-around;
-    flex-wrap: wrap;
+    flex-wrap: wrap
 }
 
 .secao-bonus h2 {
-    border: 5px double #809E6C;
-    font-size: 2.67rem;
-    padding: -100px;
+    border: 5px double #809e6c;
+    font-size: 2.67rem
+}
+
+.beneficio,
+.secao-beneficios {
+    border-radius: 5px;
+    display: flex
 }
 
 .sc-hero {
-    margin-top: 0;
+    margin-top: 0
 }
 
 .secao-beneficios {
-    display: flex;
-    margin: 20px auto;
+    margin: 100px auto 20px;
     width: 90%;
     height: 700px;
-    border-radius: 5px;
-    margin-top: 100px;
-    padding: 35px;
+    padding: 35px
 }
 
 .beneficio {
     flex: 1 1 calc(50% - 20px);
-    background-color: transparent;
-    border-radius: 5px;
     margin-bottom: 20px;
-    display: flex;
     flex-direction: column;
     align-items: center;
-    width: 40%;
+    width: 40%
 }
 
 .beneficio img {
-    margin: 50px 0 50px 50px;
-    max-width: 555px;
-    background-color: transparent;
-    margin-right: -550px;
-    margin-top: -95px;
+    margin: -95px -550px 50px 50px;
+    max-width: 555px
 }
 
 .beneficio p {
     font-size: 20px;
     line-height: 1.7;
-    color: #78857B;
+    color: #78857b;
     text-align: justify;
-    margin: 50px 0 10px;
-    margin-top: -70px;
-    width: 50%;
+    margin: -70px 0 10px;
+    width: 50%
 }
 
 .sc-programa {
-    background-color: #809E6C;
+    background-color: #809e6c;
     display: flex;
     flex-direction: row-reverse;
     width: 100%;
     height: 320px;
-    margin-top: -1px;
+    margin-top: -1px
 }
 
 .waves {
     margin-bottom: -1px;
     display: flex;
     z-index: 2;
-    margin-top: -290px;
+    margin-top: -290px
 }
 
 .secao-programa h2 {
     padding-top: 5px;
     font-size: 28px;
-    color: rgb(252, 249, 244);
-    text-shadow: -11px 3px 16px rgba(0, 0, 0, 1);
+    color: #fcf9f4;
+    text-shadow: -11px 3px 16px #000;
     margin: 0 0 50px 50px;
-    text-align: center;
+    text-align: center
 }
 
 .secao-programa ul {
     list-style: none;
     padding: 0;
-    margin: 0;
-    margin-bottom: 20px;
-    margin-top: -45px;
+    margin: -45px 0 20px
 }
 
 .secao-programa ul li {
@@ -262,7 +314,7 @@ nav ul li a {
     vertical-align: middle;
     margin-top: 16px;
     text-align: justify;
-    color: white;
+    color: #fff
 }
 
 .secbeneficios {
@@ -270,149 +322,141 @@ nav ul li a {
     flex-direction: column;
     margin: 20px 600px 0;
     width: 50%;
-    padding: 10px;
+    padding: 10px
+}
+
+.bonus-exclusivos,
+.secao-bonus {
+    padding: 20px;
+    border-radius: 5px
 }
 
 .button-compra {
     background-color: #648b73;
     border-radius: 9px;
     border: #020500;
-    width: 300px;
-    height: 40px;
-    color: white;
-    text-transform: uppercase;
-    font-weight: 800;
-    font-size: 15px;
-    margin: 100px;
-    margin-top: -350px;
-    margin-left: -450px;
-    box-shadow: rgba(177, 212, 198, 0.25) 0px 30px 60px -12px inset, rgba(224, 12, 12, 0.3) 0px 18px 36px -18px inset;
+    width: 295px;
+    height: 80px;
+    color: #fff;
+    font-size: 25px;
+    margin: -350px 100px 100px -450px;
+    box-shadow: rgba(177, 212, 198, .25) 0 30px 60px -12px inset, rgba(224, 12, 12, .3) 0 18px 36px -18px inset
 }
 
 .btn i {
-    margin-left: 10px;
+    margin-left: 10px
 }
 
 .bonus-exclusivos {
     display: flex;
     justify-content: center;
     background-color: #fefeff8f;
-    border-radius: 5px;
-    padding: 20px;
     max-width: 1000px;
     width: 90%;
-    margin: 20px auto;
+    margin: 20px auto
 }
 
 .secao-garantia {
     display: flex;
     justify-content: center;
-    background-color: #1B3F12;
+    background-color: #1b3f12;
     padding: 20px;
     width: 1000;
-    margin: 20px auto;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
-    margin-top: 20px;
-    gap: 40px;
+    gap: 40px
 }
 
-.listagarantia {
+.secao-bonus,
+.secao-depoimentos {
+    margin: 20px auto;
+    background-color: #fff;
+    display: flex
+}
+
+.listagarantia h2 {
     list-style-type: none;
-    color: rgb(237, 240, 237);
+    color: #edf0ed;
     text-align: center;
     text-transform: uppercase;
-    font-family: "Quicksand", sans-serif;
+    font-family: Quicksand, sans-serif;
     font-optical-sizing: auto;
-    font-size: 13px;
+    font-size: 28px
 }
 
 .listagarantia strong {
-    color: rgb(144, 146, 20);
-    text-decoration: underline;
+    color: #c2c470
 }
 
 .mentoria li {
     width: 180px;
-    text-align: justify;
+    text-align: justify
+}
+
+footer .wave-container,
+footer svg {
+    position: absolute;
+    width: 100%;
+    z-index: 2
 }
 
 .bonus-exclusivos h3 {
     align-self: center;
-    align-items: center;
+    align-items: center
 }
 
 .bonus-exclusivos ul {
     display: flex;
     list-style-type: none;
-    padding: 0;
-}
-
-.linha-promocao {
-    display: grid;
-    justify-content: space-around;
-    margin-bottom: 20px;
+    padding: 0
 }
 
 .secao-bonus {
-    display: flex;
     align-items: center;
-    margin: 20px auto;
     max-width: 1000px;
     width: 50%;
-    padding: 20px;
-    background-color: white;
-    border-radius: 5px;
     flex-wrap: wrap;
     justify-content: space-around;
     flex-direction: row-reverse;
-    border: 5px dashed #78857B;
+    border: 5px dashed #78857b
 }
 
 .secao-bonus li {
     flex-direction: column-reverse;
     list-style-type: none;
     text-overflow: ellipsis;
-    font-size: 17px;
+    font-size: 17px
 }
 
 .secao-bonus li img {
     justify-content: space-around;
-    margin-top: 1px;
+    margin-top: 1px
 }
 
-/* Estilo para a seção de depoimentos */
 .secao-depoimentos {
-    display: flex;
     align-items: center;
-    margin: 20px auto;
     width: 80%;
     height: 450px;
-    background-color: white;
-    box-shadow: 10px #6ABD45;
-    margin-top: 20px;
+    box-shadow: 10px #6abd45
 }
 
 .secao-depoimentos h2 {
     position: absolute;
     font-size: 24px;
-    color: #1B3F12;
-    text-shadow: -11px 3px 16px rgb(61, 146, 61);
-    margin: 1px 0px 300px 10px;
-    text-align: center;
-    margin-top: -230px;
+    color: #1b3f12;
+    text-shadow: -11px 3px 16px #3d923d;
+    margin: -230px 0 300px 10px;
+    text-align: center
 }
 
 .depoimento {
     display: flex;
     justify-content: center;
     padding: 10px;
-    border: 1px solid rgb(140, 185, 150);
-    border-radius: 0px;
+    border: 1px solid #8cb996;
+    border-radius: 0;
     margin: 27px 5px;
-    background-color: transparent;
-
+    background-color: transparent
 }
 
 .depoimento p {
@@ -420,7 +464,7 @@ nav ul li a {
     line-height: 1.5;
     margin-bottom: 10px;
     text-align: start;
-    color: #78857B;
+    color: #78857b
 }
 
 .secao-depoimentos button {
@@ -433,255 +477,250 @@ nav ul li a {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    justify-content: center;
+    justify-content: center
 }
 
 .secao-depoimentos button i {
-    margin-left: 5px;
+    margin-left: 5px
 }
 
 .depoimento cite {
     font-style: italic;
     text-transform: initial;
     font-size: 15px;
-    margin-top: 10px;
-}
-
-.depoimento-ativo {
-    display: block;
+    margin-top: 10px
 }
 
 .depoimentos-inativos {
-    display: none;
+    display: none
 }
 
 .navegacao {
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
+    margin-top: 20px
 }
 
 .navegacao button {
     padding: 10px 20px;
-    background-color: #ccc;
     border: none;
     cursor: pointer;
-}
-
-.navegacao button {
-    background-color: #bbb;
+    background-color: #bbb
 }
 
 .navegacao button.desativado {
-    opacity: 0.5;
-    cursor: default;
+    opacity: .5;
+    cursor: default
 }
 
 .button-comprafinal {
     background-color: #648b73;
     border-radius: 5px;
     border: #020500;
-    color: white;
-    text-transform: uppercase;
-    font-weight: 800;
-    font-size: 20px;
-    box-shadow: rgba(177, 212, 198, 0.25) 0px 30px 60px -12px inset, rgba(224, 12, 12, 0.3) 0px 18px 36px -18px inset;
-}
-
-#botaocompra:hover {
-    background-color: red;
+    width: 300px;
+    height: 70px;
+    color: #fff;
+    font-size: 25px;
+    box-shadow: rgba(177, 212, 198, .25) 0 30px 60px -12px inset, rgba(224, 12, 12, .3) 0 18px 36px -18px inset
 }
 
 .linha-promocao {
     display: grid;
     justify-content: space-around;
-    margin-bottom: 20px;
+    margin-bottom: 20px
 }
 
 .secao-precos {
     display: flex;
     flex-direction: column;
-    margin: 20px auto;
+    margin: 50px auto 20px;
     max-width: 1000px;
     font-size: 2.67rem;
     border-radius: 5px;
-    margin-top: 50px;
-    padding: 0 20px;
+    padding: 0 20px
+}
+
+.pacote,
+.secao-precos h2 {
+    margin-bottom: 20px;
+    font-size: 2.27rem;
+    text-align: center
 }
 
 .secao-precos h2 {
-    box-shadow: rgb(41, 94, 52) 0px 0px 0px 2px inset, rgb(255, 255, 255) 10px -10px 0px -3px, rgb(89, 134, 106) 10px -10px, rgb(255, 255, 255) 20px -20px 0px -3px, rgb(81, 117, 96) 20px -20px, rgb(255, 255, 255) 30px -30px 0px -3px;
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 2.27rem;
-    color: #809E6C;
+    box-shadow: #295e34 0 0 0 2px inset, #fff 10px -10px 0 -3px, #59866a 10px -10px, #fff 20px -20px 0 -3px, #517560 20px -20px, #fff 30px -30px 0 -3px;
+    color: #809e6c
 }
 
 .pacote {
-    background-color: #ffffff;
-    margin-bottom: 20px;
-
+    background-color: #fff;
     padding: 20px;
-    text-align: center;
-    font-size: 2.27rem;
-    border: 5px dashed #78857B;
+    border: 5px dashed #78857b
 }
 
 .secao-precos h3 {
-    color: #809E6C;
+    color: #809e6c;
     font-size: 3.33rem;
-    margin-bottom: 10px;
+    margin-bottom: 10px
 }
 
 .secao-precos p {
     font-size: 3.6rem;
-    font-weight: bold;
-    color: #90c21d;
+    font-weight: 700;
+    color: #90c21d
 }
 
 .secao-precos ul {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 0
 }
 
 .secao-precos ul li {
     font-size: 1.33rem;
     margin-bottom: 5px;
-    color: rgb(0, 0, 0);
+    color: #000
 }
 
+footer {
+    position: relative;
+    height: 320px;
+    overflow: hidden
+}
 
-@media (max-width: 390px) {
+footer .wave-container {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent
+}
 
+footer p {
+    color: #000;
+    font-size: 1rem;
+    pointer-events: all;
+    text-align: center;
+    margin: 0
+}
+
+@media (max-width:390px) {
+
+    body,
     html,
-    body {
+    nav ul {
         margin: 0;
-        padding: 0;
-        font-family: "Teachers", sans-serif;
-        background-color: #ffffff;
+        padding: 0
+    }
+
+    body,
+    html {
+        font-family: Teachers, sans-serif;
+        background-color: #fff;
         overflow-x: hidden;
         touch-action: manipulation;
-        width: 100%;
+        width: 100%
     }
 
+    .depoimento,
     .linha-promocao,
-    .promocao,
-    .depoimento {
+    .promocao {
         flex: 1 1 100%;
         margin-bottom: 10px;
-        box-shadow: none;
+        box-shadow: none
     }
 
     .hero h1 {
-        font-size: 1.5rem;
+        font-size: 1.5rem
     }
 
     .hero p {
         font-size: 20px;
-        padding: 10px;
+        padding: 10px
     }
 
     nav {
-        background-color: #1A3F13;
-        color: white;
+        background-color: #1a3f13;
+        color: #fff;
         width: 100%;
-        margin-top: -190px;
+        margin-top: -190px
     }
 
     nav ul {
         list-style: none;
-        margin: 0;
         display: flex;
-        padding: 0;
-        flex-wrap: wrap;
+        flex-wrap: wrap
     }
 
     nav ul li {
-        font-size: 12px;
-        margin-top: 15px;
-        margin: 15px 0;
+        font-size: 14px;
+        margin: 15px 0
     }
 
     .banner img {
         width: 100%;
         height: 200px;
-        object-fit: fill;
+        object-fit: fill
     }
 
     .secao-beneficios {
         padding: 5px;
-        height: 550px;
+        height: 550px
     }
 
     .beneficio img {
         margin: 10px 0;
-        max-width: 100%;
-    }
-
-    .beneficio p {
-        width: 100%;
-        margin: 10px 0;
-        font-size: 0.9rem;
-        margin-top: -100px;
+        max-width: 100%
     }
 
     .waves {
         margin-bottom: -1px;
         display: flex;
         z-index: 2;
-        margin-top: -20px;
+        margin-top: -20px
     }
 
     .secao-programa h2 {
-        font-size: 23px;
+        font-size: 23px
     }
 
     .sc-programa {
         width: 100%;
         height: 470px;
-        margin-top: 1;
+        margin-top: 1
     }
 
     .secbeneficios ul li {
         text-align: justify;
-        font-size: 20px;
+        font-size: 20px
     }
 
     .secbeneficios {
         margin: 5px;
-        width: 90%;
+        width: 90%
     }
 
     .secbeneficios img {
-        margin-bottom: -3px;
+        margin-bottom: -3px
     }
 
     .button-compra {
-        width: 100%;
-        height: 40px;
-        font-size: 14px;
-        margin: 20px auto;
-        margin-top: 20px;
-        margin-left: 0;
-        box-shadow: rgba(177, 212, 198, 0.25) 0px 15px 30px -6px inset, rgba(224, 12, 12, 0.3) 0px 9px 18px -9px inset;
-    }
-
-    .button-compra {
-        width: 100%;
-        margin: 10px 0;
-        margin-left: 0;
+        height: 50px;
+        font-size: 24px;
+        margin: 20px auto 20px 0;
+        box-shadow: rgba(177, 212, 198, .25) 0 15px 30px -6px inset, rgba(224, 12, 12, .3) 0 9px 18px -9px inset
     }
 
     .button-comprafinal {
         width: 100%;
-        margin: 10px 0;
+        margin: 10px 0
     }
 
     .secao-bonus {
         flex-direction: column;
-        align-items: center;
-        width: 90%;
+        align-items: center
     }
 
     .secao-garantia {
@@ -689,7 +728,7 @@ nav ul li a {
         align-items: center;
         width: 90%;
         padding: 10px;
-        margin-top: -100px;
+        margin-top: -100px
     }
 
     .secao-depoimentos {
@@ -699,15 +738,14 @@ nav ul li a {
         align-items: center;
         width: 100%;
         height: auto;
-        margin-bottom: 120px;
-
+        margin-bottom: 120px
     }
 
     .secao-depoimentos h2 {
         font-size: 20px;
         margin-top: -120px;
         text-align: left;
-        margin-left: 20px;
+        margin-left: 20px
     }
 
     .secao-depoimentos button {
@@ -720,59 +758,59 @@ nav ul li a {
         display: flex;
         background-size: contain;
         background-position: center;
-        background-repeat: no-repeat;
+        background-repeat: no-repeat
     }
 
     .depoimento p {
-        font-size: 0.9rem;
+        font-size: .9rem
     }
 
     .secao-bonus {
         text-align: center;
-        width: 79%;
+        width: 79%
     }
 
     .secao-bonus h2 {
-        font-size: 32px;
+        font-size: 32px
     }
 
     .pacote h3 {
-        font-size: 45px;
+        font-size: 45px
     }
 
     .secao-precos h2 {
-        margin-right: 10px;
+        margin-right: 10px
     }
 
     .pacote p {
-        font-size: 49px;
+        font-size: 49px
     }
-
 }
 
-@media (min-width: 375px) and (max-width: 430px) {
+@media (min-width:375px) and (max-width:430px) {
+
+    .depoimento,
     .linha-promocao,
-    .promocao,
-    .depoimento {
+    .promocao {
         flex: 1 1 100%;
         margin-bottom: 10px;
-        box-shadow: none;
+        box-shadow: none
     }
 
     .hero h1 {
-        font-size: 1.5rem;
+        font-size: 1.5rem
     }
 
     .hero p {
         font-size: 20px;
-        padding: 10px;
+        padding: 10px
     }
 
     nav {
-        background-color: #1A3F13;
-        color: white;
+        background-color: #1a3f13;
+        color: #fff;
         width: 100%;
-        margin-top: -190px;
+        margin-top: -190px
     }
 
     nav ul {
@@ -780,102 +818,92 @@ nav ul li a {
         margin: 0;
         display: flex;
         padding: 0;
-        flex-wrap: wrap;
+        flex-wrap: wrap
     }
 
     nav ul li {
-        font-size: 12px;
-        margin-top: 15px;
-        margin: 15px 0;
+        font-size: 18px;
+        margin: 15px 0
     }
 
     .banner img {
         width: 100%;
         height: 200px;
-        object-fit: fill;
+        object-fit: fill
     }
 
     .secao-beneficios {
         padding: 5px;
-        height: 550px;
+        height: 550px
     }
 
     .beneficio img {
         margin: 10px 0;
-        max-width: 100%;
+        max-width: 100%
     }
 
     .beneficio p {
         width: 100%;
-        margin: 10px 0;
-        font-size: 0.9rem;
-        margin-top: -100px;
+        margin: -100px 0 10px;
+        font-size: 15px
     }
 
     .waves {
         margin-bottom: -1px;
         display: flex;
         z-index: 2;
-        margin-top: -20px;
+        margin-top: -20px
     }
 
     .secao-programa h2 {
         font-size: 23px;
+        margin-left: 10px
     }
 
     .sc-programa {
         width: 100%;
         height: 470px;
-        margin-top: 1;
+        margin-top: 1
     }
 
     .secbeneficios ul li {
         text-align: justify;
-        font-size: 20px;
+        font-size: 20px
     }
 
     .secbeneficios {
         margin: 5px;
-        width: 90%;
+        width: 90%
     }
 
     .secbeneficios img {
-        margin-bottom: -3px;
+        margin-bottom: -3px
     }
 
-    .button-compra {
-        width: 100%;
-        height: 40px;
-        font-size: 14px;
-        margin: 20px auto;
-        margin-top: 20px;
-        margin-left: 0;
-        box-shadow: rgba(177, 212, 198, 0.25) 0px 15px 30px -6px inset, rgba(224, 12, 12, 0.3) 0px 9px 18px -9px inset;
-    }
-
-    .button-compra {
-        width: 100%;
-        margin: 10px 0;
-        margin-left: 0;
-    }
-
+    .button-compra,
     .button-comprafinal {
         width: 100%;
-        margin: 10px 0;
+        margin: 10px 0
     }
 
     .secao-bonus {
         flex-direction: column;
-        align-items: center;
-        width: 90%;
+        align-items: center
     }
 
     .secao-garantia {
         flex-direction: column;
         align-items: center;
-        width: 90%;
+        width: 100%;
+        margin-left: -10px;
         padding: 10px;
         margin-top: -100px;
+        gap: 10px
+    }
+
+    .listagarantia h2 {
+        text-align: center;
+        font-size: 18px
     }
 
     .secao-depoimentos {
@@ -885,15 +913,14 @@ nav ul li a {
         align-items: center;
         width: 100%;
         height: auto;
-        margin-bottom: 120px;
-
+        margin-bottom: 120px
     }
 
     .secao-depoimentos h2 {
         font-size: 20px;
         margin-top: -120px;
         text-align: left;
-        margin-left: 20px;
+        margin-left: 20px
     }
 
     .secao-depoimentos button {
@@ -906,64 +933,67 @@ nav ul li a {
         display: flex;
         background-size: contain;
         background-position: center;
-        background-repeat: no-repeat;
+        background-repeat: no-repeat
     }
 
     .depoimento p {
-        font-size: 0.9rem;
+        font-size: .9rem
     }
 
     .secao-bonus {
         text-align: center;
-        width: 79%;
+        width: 79%
     }
 
     .secao-bonus h2 {
-        font-size: 32px;
+        font-size: 32px
     }
 
     .pacote h3 {
-        font-size: 45px;
+        font-size: 45px
     }
 
     .secao-precos h2 {
-        margin-right: 10px;
+        margin-right: 10px
     }
 
     .pacote p {
-        font-size: 49px;
+        font-size: 49px
     }
 }
 
-/* Permitir zoom em tablets e iPads */
-@media (min-width: 600px) and (max-width: 1024px) {
-    html,
-    body {
+@media (min-width:600px) and (max-width:1024px) {
+
+    body,
+    html {
         overflow-x: auto;
-        touch-action: auto;
-    }
-    
-    .linha-promocao,
-    .promocao,
-    .depoimento {
-        flex: 1 1 100%;
-        margin-bottom: 10px;
-        box-shadow: none;
+        touch-action: auto
     }
 
-    .hero h1 {
-        font-size: 2rem;
+    .depoimento,
+    .linha-promocao,
+    .promocao {
+        flex: 1 1 100%;
+        margin-bottom: 10px;
+        box-shadow: none
+    }
+
+    .hero h1,
+    .pacote p,
+    .secao-bonus h2,
+    .secao-programa h2 {
+        font-size: 2rem
     }
 
     .hero p {
         font-size: 1.5rem;
-        padding: 20px;
+        padding: 20px
     }
 
     nav {
-        background-color: #1A3F13;
-        color: white;
-        width: 100%;
+        background-color: #1a3f13;
+        color: #fff;
+        width: 100%
     }
 
     nav ul {
@@ -971,100 +1001,79 @@ nav ul li a {
         margin: 0;
         display: flex;
         padding: 0;
-        flex-wrap: wrap;
+        flex-wrap: wrap
     }
 
     nav ul li {
-        font-size: 20px;
-        margin-top: 15px;
-        margin: 15px 0;
+        font-size: 27px;
+        margin: 15px 0
     }
 
     .banner img {
         width: 100%;
         height: auto;
-        object-fit: fill;
+        object-fit: fill
     }
 
     .secao-beneficios {
         padding: 20px;
-        height: auto;
+        height: auto
     }
 
     .beneficio img {
         margin: 20px 0;
-        max-width: 100%;
+        max-width: 100%
     }
 
     .beneficio p {
         width: 100%;
         margin: 20px 0;
-        font-size: 1rem;
+        font-size: 2rem
     }
 
     .waves {
         margin-bottom: -1px;
         display: flex;
         z-index: 2;
-        margin-top: -20px;
-    }
-
-    .secao-programa h2 {
-        font-size: 2rem;
+        margin-top: -20px
     }
 
     .sc-programa {
         width: 100%;
         height: auto;
-        margin-top: 1;
+        margin-top: 1
     }
 
     .secbeneficios ul li {
         text-align: justify;
-        font-size: 1.5rem;
+        font-size: 1.5rem
     }
 
     .secbeneficios {
         margin: 10px;
-        width: 90%;
+        width: 90%
     }
 
     .secbeneficios img {
-        margin-bottom: -3px;
+        margin-bottom: -3px
     }
 
-    .button-compra {
-        width: 100%;
-        height: 45px;
-        font-size: 1rem;
-        margin: 20px auto;
-        margin-top: 20px;
-        margin-left: 0;
-        box-shadow: rgba(177, 212, 198, 0.25) 0px 15px 30px -6px inset, rgba(224, 12, 12, 0.3) 0px 9px 18px -9px inset;
-    }
-
-    .button-compra {
-        width: 100%;
-        margin: 10px 0;
-        margin-left: 0;
-    }
-
+    .button-compra,
     .button-comprafinal {
         width: 100%;
-        margin: 10px 0;
+        margin: 10px 0
     }
 
     .secao-bonus {
         flex-direction: column;
-        align-items: center;
-        width: 90%;
+        align-items: center
     }
 
     .secao-garantia {
         flex-direction: column;
         align-items: center;
         width: 90%;
-        padding: 20px;
+        padding: 20px
     }
 
     .secao-depoimentos {
@@ -1073,13 +1082,13 @@ nav ul li a {
         align-items: center;
         width: 100%;
         height: auto;
-        margin-bottom: 50px;
+        margin-bottom: 50px
     }
 
     .secao-depoimentos h2 {
         font-size: 1.5rem;
         margin-top: -10px;
-        text-align: center;
+        text-align: center
     }
 
     .secao-depoimentos button {
@@ -1092,31 +1101,23 @@ nav ul li a {
         display: flex;
         background-size: contain;
         background-position: center;
-        background-repeat: no-repeat;
+        background-repeat: no-repeat
     }
 
     .depoimento p {
-        font-size: 1rem;
+        font-size: 1rem
     }
 
     .secao-bonus {
         text-align: center;
-        width: 100%;
-    }
-
-    .secao-bonus h2 {
-        font-size: 2rem;
+        width: 100%
     }
 
     .pacote h3 {
-        font-size: 2.5rem;
+        font-size: 2.5rem
     }
 
     .secao-precos h2 {
-        margin-right: 10px;
-    }
-
-    .pacote p {
-        font-size: 2rem;
+        margin-right: 10px
     }
 }
